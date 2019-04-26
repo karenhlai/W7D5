@@ -24,7 +24,10 @@ class SignUp extends React.Component {
     //handle submitting the information of our state to the BE
     handleSubmit(e) {
         e.preventDefault();
-        //use createNewUser to the
+        //use createNewUser(from the container), and pass in this.state obj 
+        this.props.createNewUser(this.state)
+            .then( () => this.props.history.push('/chirps') ); //if we successfully create a new user, we want a cb function that will redirect us
+            //note we don't history yet, but we will b/c we wrapped this whole component inside of a route
     }
 
 
