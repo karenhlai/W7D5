@@ -24,7 +24,7 @@ class SignUp extends React.Component {
     //handle submitting the information of our state to the BE
     handleSubmit(e) {
         e.preventDefault();
-        //user createNewUser to the
+        //use createNewUser to the
     }
 
 
