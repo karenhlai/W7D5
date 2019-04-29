@@ -5,7 +5,7 @@ import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER } from '../actions/session'
 
 //setup default state for a current_user POJO
 const _nullSession = {
-    current_user = null
+    current_user: null
 };
 
 
