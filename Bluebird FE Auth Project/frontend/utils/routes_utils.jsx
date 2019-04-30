@@ -23,5 +23,12 @@ const Auth = ({ loggedIn, path, component: Component }) => (
 
 );
 
+const Protected = ({ loggedIn, path, component: Component }) => (
+    <Route path={path} render={props => (
+        loggedIn ? <Component {...props} /> : <Redirect to="/" /> 
+    )} />
+)
+
 //withRouter allows access to history, location, and map?
 export const AuthRoute = withRouter(connect(msp, mdp)(Auth));
+export const ProtectedRoute = withRouter(connect(msp, mdp)(Auth));
