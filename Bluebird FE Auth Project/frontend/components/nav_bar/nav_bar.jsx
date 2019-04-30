@@ -23,3 +23,7 @@ export default ({ currentUser, logout }) => {
     </header>
   );
 };
+
+//issues to resolve:
+//when reload page, get logged out
+//when logging out, the index still showing

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
   }
-
+  
 
   const store = createStore(preloadedState);
   // const store = createStore();
