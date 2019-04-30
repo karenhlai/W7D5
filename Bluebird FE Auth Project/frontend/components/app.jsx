@@ -14,4 +14,3 @@ export default () => (
     <Route path="/signup" component={SignupContainer}/>
   </div>
 );
-
